@@ -1,5 +1,5 @@
 .nav {
-    background-color: grey;
+    background-color: rgb(120, 168, 180);
     height: 200px;
     width: 200px;
     border-radius: 12px;
@@ -12,7 +12,7 @@
     height: 100px;
 }
 .titrenav {
-    color: cyan;
+    color: rgb(0, 0, 0);
 }
 #navs {
     display: flex;
@@ -32,14 +32,14 @@
     transition: 1s;
 }
 
-.txt:hover {
+.nav:hover .txt {
     opacity: 1;
 }
 .header {
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: #3f403d;
-    color: #efefef;
+    background-color: #343b3d;
+    color: #739da5;
     border-radius: 20px;
     bottom: 20px;
     transition: 1s;
@@ -48,7 +48,35 @@
     font-size: xx-large;
 }
 .header:hover {
-    background-color: #efefef;
-    color: #3f403d;
+    background-color: #739da5;
+    color: #343b3d;
 
+}
+#Fuel:hover {
+    background-color: yellowgreen;
+}
+#VO:hover {
+    background-color: orange;
+}
+#Guinness:hover {
+    background-color: rgb(65, 20, 0);
+    color: white;
+}
+#Bambou:hover {
+    background-color: yellow;
+}
+#Whiskas:hover {
+    background-color: rgb(143, 69, 0);
+}
+#Mojito:hover {
+    background-color: green;
+}
+#Monaco:hover {
+    background-color: crimson;
+}
+#Enter_Sandman:hover {
+    background-color: sandybrown;
+}
+#Reload:hover {
+    background-color: orangered;
 }
