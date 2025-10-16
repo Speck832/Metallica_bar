@@ -80,3 +80,10 @@
 #Reload:hover {
     background-color: orangered;
 }
+#Guinness2 {
+    color: black;
+    transition: 1s;
+}
+#Guinness:hover #Guinness2 {
+    color: white;
+}
