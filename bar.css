@@ -87,3 +87,6 @@
 #Guinness:hover #Guinness2 {
     color: white;
 }
+#nothing_else_matters:hover {
+    background-color: wheat;
+}
