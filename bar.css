@@ -9,7 +9,9 @@
     transition: 1s;
 }
 .imagenav {
-    height: 100px;
+    height: 80px;
+    width:80px;
+    transition: 1s;
 }
 .titrenav {
     color: rgb(0, 0, 0);
@@ -43,6 +45,8 @@
     border-radius: 20px;
     bottom: 20px;
     transition: 1s;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 .titre {
     font-size: xx-large;
@@ -80,6 +84,9 @@
 #Reload:hover {
     background-color: orangered;
 }
+#diabolo:hover {
+    background-color: rgb(230, 0, 0);
+}
 #Guinness2 {
     color: black;
     transition: 1s;
@@ -89,4 +96,75 @@
 }
 #nothing_else_matters:hover {
     background-color: wheat;
+}
+#Fuel:hover #a {
+    height: 150px;
+    width: 150px;
+}
+#VO:hover #b {
+    height: 150px;
+    width: 150px;
+}
+#Guinness:hover #c {
+    height: 150px;
+    width: 150px;
+}
+#Bambou:hover #d {
+    height: 150px;
+    width: 150px;
+}
+#Whiskas:hover #e {
+    height: 150px;
+    width: 150px;
+}
+#Mojito:hover #f {
+    height: 150px;
+    width: 150px;
+}
+#Monaco:hover #g {
+    height: 150px;
+    width: 150px;
+}
+#Enter_Sandman:hover #h {
+    height: 150px;
+    width: 150px;
+}
+#Reload:hover #i {
+    height: 150px;
+    width: 150px;
+}
+#nothing_else_matters:hover #j {
+    height: 150px;
+    width: 150px;
+}
+#diabolo:hover #k {
+    height: 150px;
+    width: 150px;  
+}
+#cafes {
+    background-color: rgb(120, 168, 180);
+    height: 200px;
+    width: 400px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 1s;
+}
+#cafes:hover {
+    width: 600px;
+    height: 300px;
+    background-color:#aa7b5b;
+}
+#cafes:hover #l {
+    height: 150px;
+    width: 150px;
+}
+#cafes:hover #txtcaf {
+    opacity: 1;
+}
+#cafesdelamaison {
+    justify-self: center;
+    align-self: center;
+    margin-top: 20px;
 }

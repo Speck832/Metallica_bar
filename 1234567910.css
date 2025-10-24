@@ -5,4 +5,57 @@
     color: #739da5;
     border-radius: 20px;
     bottom: 20px;
+    align-self: center;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+.header:hover {
+        background-color: yellowgreen;
+        color: #343b3d;
+    }
+.flex {
+    background-color: yellowgreen;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    border-radius: 10px;
+    transition: all ease-in-out 0.3s;
+}
+.flex:hover {
+    transform: scale(1.1);
+}
+#img {
+    border-radius: 7px;
+}
+#divimage {
+    width: 310px;
+    height: 520px;
+    margin: 40px;
+}
+#diving {
+    width: 310px;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+#divasso {
+    width: 310px;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+#section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
