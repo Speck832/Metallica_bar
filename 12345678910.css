@@ -1,180 +1,232 @@
+body {
+  background-color: #000;
+}
+
 .header1 {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #343b3d;
-  color: #739da5;
+  background-color: none;
+  background-image: url("./fond-texture-planche-bois-noir_53876-138962.jpg");
+  background-attachment: fixed;
+  color: #fff;
   border-radius: 20px;
   bottom: 20px;
   align-self: center;
   margin-bottom: 20px;
-  transition: 0.3s;
+  transition: 1s;
 }
 .header1:hover {
+  transition: 1s;
+  background-image: none;
   background-color: yellowgreen;
   color: #343b3d;
 }
 .header2 {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #343b3d;
-  color: #739da5;
+  background-color: none;
+  background-image: url("./fond-texture-planche-bois-noir_53876-138962.jpg");
+  background-attachment: fixed;
+  color: #fff;
   border-radius: 20px;
   bottom: 20px;
   align-self: center;
   margin-bottom: 20px;
-  transition: 0.3s;
+  transition: 1s;
 }
 .header2:hover {
+  transition: 1s;
+  background-image: none;
   background-color: orange;
   color: #343b3d;
 }
 .header3 {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #343b3d;
-  color: #739da5;
+  background-color: none;
+  background-image: url("./fond-texture-planche-bois-noir_53876-138962.jpg");
+  background-attachment: fixed;
+  color: #fff;
   border-radius: 20px;
   bottom: 20px;
   align-self: center;
   margin-bottom: 20px;
-  transition: 0.3s;
+  transition: 1s;
 }
 .header3:hover {
+  transition: 1s;
+  background-image: none;
   background-color: #3b1702;
   color: #ffffff;
 }
 .header4 {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #343b3d;
-  color: #739da5;
+  background-color: none;
+  background-image: url("./fond-texture-planche-bois-noir_53876-138962.jpg");
+  background-attachment: fixed;
+  color: #fff;
   border-radius: 20px;
   bottom: 20px;
   align-self: center;
   margin-bottom: 20px;
-  transition: 0.3s;
+  transition: 1s;
 }
 .header4:hover {
+  transition: 1s;
+  background-image: none;
   background-color: #fffd40;
   color: #000000;
 }
 .header5 {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #343b3d;
-  color: #739da5;
+  background-color: none;
+  background-image: url("./fond-texture-planche-bois-noir_53876-138962.jpg");
+  background-attachment: fixed;
+  color: #fff;
   border-radius: 20px;
   bottom: 20px;
   align-self: center;
   margin-bottom: 20px;
-  transition: 0.3s;
+  transition: 1s;
 }
 .header5:hover {
+  transition: 1s;
+  background-image: none;
   background-color: #84490f;
   color: #000000;
 }
 .header6 {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #343b3d;
-  color: #739da5;
+  background-color: none;
+  background-image: url("./fond-texture-planche-bois-noir_53876-138962.jpg");
+  background-attachment: fixed;
+  color: #fff;
   border-radius: 20px;
   bottom: 20px;
   align-self: center;
   margin-bottom: 20px;
-  transition: 0.3s;
+  transition: 1s;
 }
 .header6:hover {
+  transition: 1s;
+  background-image: none;
   background-color: #3a7d18;
   color: #000000;
 }
 .header7 {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #343b3d;
-  color: #739da5;
+  background-color: none;
+  background-image: url("./fond-texture-planche-bois-noir_53876-138962.jpg");
+  background-attachment: fixed;
+  color: #fff;
   border-radius: 20px;
   bottom: 20px;
   align-self: center;
   margin-bottom: 20px;
-  transition: 0.3s;
+  transition: 1s;
 }
 .header7:hover {
+  transition: 1s;
+  background-image: none;
   background-color: #c7343f;
   color: #000000;
 }
 .header8 {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #343b3d;
-  color: #739da5;
+  background-color: none;
+  background-image: url("./fond-texture-planche-bois-noir_53876-138962.jpg");
+  background-attachment: fixed;
+  color: #fff;
   border-radius: 20px;
   bottom: 20px;
   align-self: center;
   margin-bottom: 20px;
-  transition: 0.3s;
+  transition: 1s;
 }
 .header8:hover {
+  transition: 1s;
+  background-image: none;
   background-color: #e7a767;
   color: #000000;
 }
 .header9 {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #343b3d;
-  color: #739da5;
+  background-color: none;
+  background-image: url("./fond-texture-planche-bois-noir_53876-138962.jpg");
+  background-attachment: fixed;
+  color: #fff;
   border-radius: 20px;
   bottom: 20px;
   align-self: center;
   margin-bottom: 20px;
-  transition: 0.3s;
+  transition: 1s;
 }
 .header9:hover {
+  transition: 1s;
+  background-image: none;
   background-color: #e8571b;
   color: #000000;
 }
 .header10 {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #343b3d;
-  color: #739da5;
+  background-color: none;
+  background-image: url("./fond-texture-planche-bois-noir_53876-138962.jpg");
+  background-attachment: fixed;
+  color: #fff;
   border-radius: 20px;
   bottom: 20px;
   align-self: center;
   margin-bottom: 20px;
-  transition: 0.3s;
+  transition: 1s;
 }
 .header10:hover {
+  transition: 1s;
+  background-image: none;
   background-color: #f0deb6;
   color: #000000;
 }
 .header11 {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #343b3d;
-  color: #739da5;
+  background-color: none;
+  background-image: url("./fond-texture-planche-bois-noir_53876-138962.jpg");
+  background-attachment: fixed;
+  color: #fff;
   border-radius: 20px;
   bottom: 20px;
   align-self: center;
   margin-bottom: 20px;
-  transition: 0.3s;
+  transition: 1s;
 }
 .header11:hover {
+  transition: 1s;
+  background-image: none;
   background-color: #d03113;
   color: #000000;
 }
 .header12 {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #343b3d;
-  color: #739da5;
+  background-color: none;
+  background-image: url("./fond-texture-planche-bois-noir_53876-138962.jpg");
+  background-attachment: fixed;
+  color: #fff;
   border-radius: 20px;
   bottom: 20px;
   align-self: center;
   margin-bottom: 20px;
-  transition: 0.3s;
+  transition: 1s;
 }
 .header12:hover {
+  transition: 1s;
+  background-image: none;
   background-color: #aa7b5b;
   color: #000000;
 }
