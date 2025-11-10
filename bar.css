@@ -1,173 +1,285 @@
 body {
-    background-color: #000;
+  background-color: #000;
 }
+
 .nav {
-    background-color: rgb(187, 187, 187);
-    height: 200px;
-    width: 200px;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: 1s;
+  background-color: rgb(187, 187, 187);
+  height: 200px;
+  width: 200px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 1s;
 }
+
 .imagenav {
-    height: 80px;
-    width:80px;
-    transition: 1s;
+  height: 80px;
+  width: 80px;
+  transition: 1s;
 }
+
 .titrenav {
-    color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
+
 #navs {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
+
 .nav:hover {
-    width: 300px;
-    height: 300px;
+  width: 300px;
+  height: 300px;
 }
+
 .txt {
-    opacity: 0;
-    transition: 1s;
+  opacity: 0;
+  transition: 1s;
 }
 
 .nav:hover .txt {
-    opacity: 1;
+  opacity: 1;
 }
-.header {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-image: url("./fond-texture-planche-bois-noir_53876-138962.jpg");
-    background-attachment: fixed;
-    color: #fff;
-    border-radius: 20px;
-    bottom: 20px;
-    transition: 1s;
-    margin-bottom: 50px;
-    margin-top: 50px;
-}
-.titre {
-    font-size: xx-large;
-}
-.header:hover {
-    color: #000;
 
+.header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image: url("./fond-texture-planche-bois-noir_53876-138962.jpg");
+  background-attachment: fixed;
+  color: #fff;
+  border-radius: 20px;
+  bottom: 20px;
+  transition: 1s;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
+
+.titre {
+  font-size: xx-large;
+}
+
+.header:hover {
+  color: #000;
+}
+
 #Fuel:hover {
-    background-color: yellowgreen;
+  background-color: yellowgreen;
 }
+
 #VO:hover {
-    background-color: orange;
+  background-color: orange;
 }
+
 #Guinness:hover {
-    background-color: rgb(65, 20, 0);
-    color: white;
+  background-color: rgb(65, 20, 0);
+  color: white;
 }
+
 #Bambou:hover {
-    background-color: yellow;
+  background-color: yellow;
 }
+
 #Whiskas:hover {
-    background-color: rgb(143, 69, 0);
+  background-color: rgb(143, 69, 0);
 }
+
 #Mojito:hover {
-    background-color: green;
+  background-color: green;
 }
+
 #Monaco:hover {
-    background-color: crimson;
+  background-color: crimson;
 }
+
 #Enter_Sandman:hover {
-    background-color: sandybrown;
+  background-color: sandybrown;
 }
+
 #Reload:hover {
-    background-color: orangered;
+  background-color: orangered;
 }
+
 #diabolo:hover {
-    background-color: rgb(230, 0, 0);
+  background-color: rgb(230, 0, 0);
 }
+
 #Guinness2 {
-    color: black;
-    transition: 1s;
+  color: black;
+  transition: 1s;
 }
+
 #Guinness:hover #Guinness2 {
-    color: white;
+  color: white;
 }
+
 #nothing_else_matters:hover {
-    background-color: wheat;
+  background-color: wheat;
 }
+
 #Fuel:hover #a {
-    height: 150px;
-    width: 150px;
+  height: 150px;
+  width: 150px;
 }
+
 #VO:hover #b {
-    height: 150px;
-    width: 150px;
+  height: 150px;
+  width: 150px;
 }
+
 #Guinness:hover #c {
-    height: 150px;
-    width: 150px;
+  height: 150px;
+  width: 150px;
 }
+
 #Bambou:hover #d {
-    height: 150px;
-    width: 150px;
+  height: 150px;
+  width: 150px;
 }
+
 #Whiskas:hover #e {
-    height: 150px;
-    width: 150px;
+  height: 150px;
+  width: 150px;
 }
+
 #Mojito:hover #f {
-    height: 150px;
-    width: 150px;
+  height: 150px;
+  width: 150px;
 }
+
 #Monaco:hover #g {
-    height: 150px;
-    width: 150px;
+  height: 150px;
+  width: 150px;
 }
+
 #Enter_Sandman:hover #h {
-    height: 150px;
-    width: 150px;
+  height: 150px;
+  width: 150px;
 }
+
 #Reload:hover #i {
-    height: 150px;
-    width: 150px;
+  height: 150px;
+  width: 150px;
 }
+
 #nothing_else_matters:hover #j {
-    height: 150px;
-    width: 150px;
+  height: 150px;
+  width: 150px;
 }
+
 #diabolo:hover #k {
-    height: 150px;
-    width: 150px;  
+  height: 150px;
+  width: 150px;
 }
+
 #cafes {
-    background-color: rgb(255, 255, 255);
-    height: 200px;
-    width: 200px;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: 1s;
+  background-color: rgb(255, 255, 255);
+  height: 200px;
+  width: 200px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 1s;
 }
+
 #cafes:hover {
-    width: 300px;
-    height: 300px;
-    background-color:#aa7b5b;
+  width: 300px;
+  height: 300px;
+  background-color: #aa7b5b;
 }
+
 #cafes:hover #l {
-    height: 150px;
-    width: 150px;
+  height: 150px;
+  width: 150px;
 }
+
 #cafes:hover #txtcaf {
-    opacity: 1;
+  opacity: 1;
 }
+
 #cafesdelamaison {
-    justify-self: center;
-    align-self: center;
-    margin-top: 20px;
+  justify-self: center;
+  align-self: center;
+  margin-top: 20px;
 }
+
+#button {
+  margin: 20px;
+}
+
+#adminBtn {
+  background-color: black;
+  color: white;
+  border: 2px solid #fff;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+#adminBtn:hover {
+  background-color: #444;
+}
+
+.admin-control {
+  background-color: #222;
+  color: white;
+  border: 1px solid #999;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.admin-control:hover {
+  background-color: #555;
+}
+
+.admin-global {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #007b00;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 18px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.admin-global:hover {
+  background-color: #00aa00;
+}
+
+#liste {
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  color: #000;
+  transition: 1s;
+  border-color: gray;
+}
+#liste:hover {
+  background-color: #000;
+  color: white;
+  transform: translateY(10px);
+}
+
+#dcr {
+  text-decoration: none;
+}/*# sourceMappingURL=bar.css.map */

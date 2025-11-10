@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+}
+.commande {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px auto;
+    max-width: 400px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.commande strong {
+    color: #007BFF;
+}
+header {
+    background-color: #c0c0c0;
+    color: #646464;
+    padding: 40px;
+    border-radius: 14px;
+}

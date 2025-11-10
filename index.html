@@ -102,8 +102,117 @@
     </div>
     </section>
     </section>
+    <div id="button" align="center">
+    <button id="adminBtn">🔒 Accès admin</button>
+    </div>
+    <div>
+      <a id="dcr" href="./liste_commandes.php">
+        <button id="liste">Liste des commandes</button>
+      </a>
+    </div>
     <footer class="header">
         <h1 align="center" class="titre">Bon appétit !</h1>
     </footer>
+    <script>
+const ADMIN_PASSWORD = "Guinness7";
+let etatsCocktails = {};
+let modeAdmin = false;
+
+// 🔹 Charger les états depuis le JSON
+async function chargerCocktails() {
+  const res = await fetch("./data/cocktails.json?" + Date.now()); // évite le cache
+  etatsCocktails = await res.json();
+  appliquerEtatCocktails();
+  // le bouton global reste caché tant que pas admin
+  document.getElementById("resetAllBtn").style.display = "none";
+}
+
+// 🔹 Appliquer les états (afficher / masquer)
+function appliquerEtatCocktails() {
+  for (const [id, visible] of Object.entries(etatsCocktails)) {
+    const element = document.getElementById(id);
+    if (element) {
+      element.style.display = visible ? "block" : "none";
+      const bouton = element.querySelector(".admin-control");
+      if (bouton) bouton.textContent = visible ? "🗑 Supprimer" : "♻ Remettre";
+    }
+  }
+}
+
+// 🔹 Sauvegarder dans le fichier JSON via PHP
+async function sauvegarderEtats() {
+  await fetch("./api/save.php", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(etatsCocktails),
+  })
+  .then(res => res.json())
+  .then(data => console.log("Sauvegarde :", data))
+  .catch(err => console.error("Erreur sauvegarde :", err));
+}
+
+// 🔹 Activation du mode admin
+document.getElementById("adminBtn").addEventListener("click", () => {
+  const pwd = prompt("Mot de passe admin :");
+  if (pwd === ADMIN_PASSWORD) {
+    modeAdmin = true;
+    activerModeAdmin();
+  } else {
+    alert("Mot de passe incorrect !");
+  }
+});
+
+function activerModeAdmin() {
+  if (!modeAdmin) return;
+  alert("Mode admin activé !");
+  const navs = document.querySelectorAll(".nav");
+
+  // --- Boutons individuels ---
+  navs.forEach(nav => {
+    const id = nav.id;
+    if (!nav.querySelector(".admin-control")) {
+      const btn = document.createElement("button");
+      btn.textContent = etatsCocktails[id] ? "🗑 Supprimer" : "♻ Remettre";
+      btn.className = "admin-control";
+      btn.style.display = "block";
+      btn.style.margin = "10px auto";
+      btn.onclick = async () => {
+        etatsCocktails[id] = !etatsCocktails[id];
+        appliquerEtatCocktails();
+        await sauvegarderEtats();
+      };
+      nav.appendChild(btn);
+    }
+  });
+
+  // --- Afficher le bouton global ---
+  const resetBtn = document.getElementById("resetAllBtn");
+  if (resetBtn) resetBtn.style.display = "block";
+}
+
+// 🔹 Réinitialiser tous les cocktails
+async function toutRemettre() {
+  if (confirm("Remettre TOUS les cocktails visibles ?")) {
+    for (const key in etatsCocktails) {
+      etatsCocktails[key] = true;
+    }
+    appliquerEtatCocktails();
+    await sauvegarderEtats();
+    alert("Tous les cocktails ont été réactivés !");
+  }
+}
+
+// 🔹 Créer le bouton global dès le départ (mais le cacher)
+const globalBtn = document.createElement("button");
+globalBtn.id = "resetAllBtn";
+globalBtn.textContent = "♻ Tout remettre";
+globalBtn.className = "admin-global";
+globalBtn.style.display = "none"; // caché tant que pas admin
+globalBtn.onclick = toutRemettre;
+document.body.appendChild(globalBtn);
+
+chargerCocktails();
+</script>
+
 </body>
 </html>

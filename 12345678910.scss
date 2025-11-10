@@ -537,3 +537,30 @@ body {
 .img {
     margin: 20px;
 }
+#prenom {
+    padding: 8px;
+    background-color: #23292b;
+    border-style: solid;
+    border-radius: 7px;
+        display: flex;
+    align-self: center;
+    justify-self: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#commander {
+    padding: 5px;
+    background-color: #767676;
+    color: #23292b;
+    border-style: solid;
+    border-color: #23292b;
+    border-radius: 6px ;
+    transition: 1s;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    &:hover {
+        background-color: #fff;
+        transform: translateY(2px);
+    }
+}
