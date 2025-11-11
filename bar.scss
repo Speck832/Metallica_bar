@@ -1,11 +1,15 @@
 body {
-    background-color: #000;
+    background-color: #868686;
+    cursor: url('./BlueToGreenPointer.cur'), auto;
 }
 .nav {
-    background-color: rgb(187, 187, 187);
+    background-color: rgb(87, 123, 128);
+    border-style: outset;
+    border-width: 0.5px;
+    border-color: #222;
     height: 200px;
     width: 200px;
-    border-radius: 12px;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,6 +19,7 @@ body {
     height: 80px;
     width:80px;
     transition: 1s;
+    cursor: url('./BlueToGreenLinkSelect.cur'),auto;
 }
 .titrenav {
     color: rgb(0, 0, 0);
@@ -46,10 +51,20 @@ body {
     background-image: url("./fond-texture-planche-bois-noir_53876-138962.jpg");
     background-attachment: fixed;
     color: #fff;
-    border-radius: 20px;
+    border-radius: 14px;
     bottom: 20px;
     transition: 1s;
     margin-bottom: 50px;
+}
+.footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-image: url("./fond-texture-planche-bois-noir_53876-138962.jpg");
+    background-attachment: fixed;
+    color: #fff;
+    border-radius: 14px;
+    bottom: 20px;
+    transition: 1s;
     margin-top: 50px;
 }
 .titre {
@@ -89,6 +104,15 @@ body {
 }
 #diabolo:hover {
     background-color: rgb(230, 0, 0);
+}
+#lifeblood:hover {
+    background-color: #00ccff;
+}
+#sadbuttrue:hover {
+    background-color: royalblue;
+}
+#unforgiven:hover {
+    background-color: rgb(255, 17, 0);
 }
 #Guinness2 {
     color: black;
@@ -153,6 +177,9 @@ body {
     flex-direction: column;
     align-items: center;
     transition: 1s;
+        border-style: outset;
+    border-width: 0.5px;
+    border-color: #222;
 }
 #cafes:hover {
     width: 300px;
@@ -180,7 +207,7 @@ body {
   border: 2px solid #fff;
   padding: 8px 16px;
   font-size: 1rem;
-  cursor: pointer;
+  cursor: url('./BlueToGreenLinkSelect.cur'),auto;
   transition: 0.3s;
   margin-top: 10px;
 }
@@ -195,7 +222,7 @@ body {
   border: 1px solid #999;
   padding: 6px 10px;
   border-radius: 4px;
-  cursor: pointer;
+  cursor: url('./BlueToGreenLinkSelect.cur'),auto;
   transition: 0.3s;
 }
 .admin-control:hover {
@@ -212,7 +239,7 @@ body {
   padding: 12px 18px;
   font-size: 1rem;
   font-weight: bold;
-  cursor: pointer;
+  cursor: url('./BlueToGreenLinkSelect.cur'),auto;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   transition: 0.3s;
   z-index: 999;
@@ -230,12 +257,32 @@ body {
   color: #000;
   transition: 1s;
   border-color: gray;
+  -webkit-box-shadow: 2px 4px 9px 0px rgba(64, 64, 64, 1);
+-moz-box-shadow: 2px 4px 9px 0px rgba(64, 64, 64, 1);
+box-shadow: 2px 4px 9px 0px rgba(64, 64, 64, 1);
   &:hover {
+    -webkit-box-shadow: inset 2px 4px 9px 0px rgba(64, 64, 64, 1);
+-moz-box-shadow: inset 2px 4px 9px 0px rgba(64, 64, 64, 1);
+box-shadow: inset 2px 4px 9px 0px rgba(64, 64, 64, 1);
     background-color: #000;
     color: white;
     transform: translateY(10px);
+    cursor: url('./BlueToGreenLinkSelect.cur'),auto;
   }
 }
 #dcr {
   text-decoration: none;
+  cursor: url('./BlueToGreenLinkSelect.cur'),auto;
+}
+#lifeblood:hover #m {
+    height: 150px;
+    width: 150px;
+}
+#sadbuttrue:hover #n {
+    height: 150px;
+    width: 150px;
+}
+#unforgiven:hover #o {
+    height: 150px;
+    width: 150px;
 }

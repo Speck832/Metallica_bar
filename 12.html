@@ -6,6 +6,7 @@
     <title>Metallica Bar</title>
     <link rel="stylesheet" href="./12345678910.css">
     <link rel="icon" href="./stickers-logo-metallica.png" type="image/x-icon" sizes="16x16">
+    <link rel="stylesheet" href="./mediaqueries.css">
 </head>
 <body>
     <header class="header12">
@@ -38,7 +39,8 @@
     </section>
    <footer>
         <input id="prenom" placeholder="Prénom" type="text">
-        <button id="commander">Commander</button>
+        <button class="commander" id="commander">Commander un Creamy Coffee</button>
+        <button class="commander" id="commander2">Commander un Irish Coffee</button>
     </footer>
      <script>
     document.getElementById('commander').addEventListener('click', async () => {
@@ -51,6 +53,24 @@
 
         // Envoi au script PHP
         const response = await fetch('commande12.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams({ prenom })
+        });
+
+        const result = await response.json();
+        alert(result.message);
+    });
+    document.getElementById('commander2').addEventListener('click', async () => {
+        const prenom = document.getElementById('prenom').value.trim();
+
+        if (!prenom) {
+            alert("Veuillez entrer un prénom !");
+            return;
+        }
+
+        // Envoi au script PHP
+        const response = await fetch('commande122.php', {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body: new URLSearchParams({ prenom })

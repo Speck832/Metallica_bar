@@ -230,6 +230,63 @@ body {
   background-color: #aa7b5b;
   color: #000000;
 }
+.header13 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: none;
+  background-image: url("./fond-texture-planche-bois-noir_53876-138962.jpg");
+  background-attachment: fixed;
+  color: #fff;
+  border-radius: 20px;
+  bottom: 20px;
+  align-self: center;
+  margin-bottom: 20px;
+  transition: 1s;
+}
+.header13:hover {
+  transition: 1s;
+  background-image: none;
+  background-color: #00ccff;
+  color: #000000;
+}
+.header14 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: none;
+  background-image: url("./fond-texture-planche-bois-noir_53876-138962.jpg");
+  background-attachment: fixed;
+  color: #fff;
+  border-radius: 20px;
+  bottom: 20px;
+  align-self: center;
+  margin-bottom: 20px;
+  transition: 1s;
+}
+.header14:hover {
+  transition: 1s;
+  background-image: none;
+  background-color: royalblue;
+  color: #000000;
+}
+.header15 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: none;
+  background-image: url("./fond-texture-planche-bois-noir_53876-138962.jpg");
+  background-attachment: fixed;
+  color: #fff;
+  border-radius: 20px;
+  bottom: 20px;
+  align-self: center;
+  margin-bottom: 20px;
+  transition: 1s;
+}
+.header15:hover {
+  transition: 1s;
+  background-image: none;
+  background-color: rgb(255, 17, 0);
+  color: #000000;
+}
 
 .flex1 {
   background-color: yellowgreen;
@@ -409,6 +466,51 @@ body {
 .flex12:hover {
   transform: scale(1.1);
 }
+.flex13 {
+  background-color: #00ccff;
+  color: #000000;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  border-radius: 10px;
+  transition: all ease-in-out 0.3s;
+}
+.flex13:hover {
+  transform: scale(1.1);
+}
+.flex14 {
+  background-color: royalblue;
+  color: #000000;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  border-radius: 10px;
+  transition: all ease-in-out 0.3s;
+}
+.flex14:hover {
+  transform: scale(1.1);
+}
+.flex15 {
+  background-color: rgb(255, 17, 0);
+  color: #000000;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  border-radius: 10px;
+  transition: all ease-in-out 0.3s;
+}
+.flex15:hover {
+  transform: scale(1.1);
+}
 
 #img {
   border-radius: 7px;
@@ -523,7 +625,27 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  margin-bottom: 40px;
+}
+#section13 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+#section14 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+#section15 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
 
 .titre {
@@ -554,7 +676,7 @@ body {
   margin-bottom: 10px;
 }
 
-#commander {
+.commander {
   padding: 5px;
   background-color: #767676;
   color: #23292b;
@@ -565,8 +687,9 @@ body {
   display: flex;
   align-self: center;
   justify-self: center;
+  margin: 3px;
 }
-#commander:hover {
+.commander:hover {
   background-color: #fff;
   transform: translateY(2px);
 }/*# sourceMappingURL=12345678910.css.map */

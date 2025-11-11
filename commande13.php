@@ -24,7 +24,7 @@ if (!is_array($data)) {
 }
 
 // Met à jour ou crée la variable
-$data[$prenom] = "Creamy Coffee";
+$data[$prenom] = "Lifeblood";
 
 // Sauvegarde le fichier
 file_put_contents($file, json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));

@@ -230,6 +230,63 @@ body {
         color: #000000;
     }
     }
+    &13 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: none;
+    background-image: url("./fond-texture-planche-bois-noir_53876-138962.jpg");
+    background-attachment: fixed;
+    color: #fff;
+    border-radius: 20px;
+    bottom: 20px;
+    align-self: center;
+    margin-bottom: 20px;
+    transition: 1s;
+    &:hover {
+        transition: 1s;
+        background-image: none;
+        background-color: #00ccff;
+        color: #000000;
+    }
+    }
+    &14 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: none;
+    background-image: url("./fond-texture-planche-bois-noir_53876-138962.jpg");
+    background-attachment: fixed;
+    color: #fff;
+    border-radius: 20px;
+    bottom: 20px;
+    align-self: center;
+    margin-bottom: 20px;
+    transition: 1s;
+    &:hover {
+        transition: 1s;
+        background-image: none;
+        background-color: royalblue;
+        color: #000000;
+    }
+    }
+    &15 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: none;
+    background-image: url("./fond-texture-planche-bois-noir_53876-138962.jpg");
+    background-attachment: fixed;
+    color: #fff;
+    border-radius: 20px;
+    bottom: 20px;
+    align-self: center;
+    margin-bottom: 20px;
+    transition: 1s;
+    &:hover {
+        transition: 1s;
+        background-image: none;
+        background-color: rgb(255, 17, 0);
+        color: #000000;
+    }
+    }
 }
 .flex {
     &1 {
@@ -410,6 +467,51 @@ body {
             transform: scale(1.1);
         }
     }
+    &13 {
+    background-color: #00ccff;
+    color: #000000;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    border-radius: 10px;
+    transition: all ease-in-out 0.3s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    &14 {
+    background-color: royalblue;
+    color: #000000;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    border-radius: 10px;
+    transition: all ease-in-out 0.3s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    &15 {
+    background-color: rgb(255, 17, 0);
+    color: #000000;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    border-radius: 10px;
+    transition: all ease-in-out 0.3s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
 }
 #img {
     border-radius: 7px;
@@ -521,7 +623,27 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    margin-bottom: 40px;
+    }
+    &13 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    }
+    &14 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    }
+    &15 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
     }
     }
 .titre {
@@ -548,7 +670,7 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-#commander {
+.commander {
     padding: 5px;
     background-color: #767676;
     color: #23292b;
@@ -559,6 +681,7 @@ body {
     display: flex;
     align-self: center;
     justify-self: center;
+    margin: 3px;
     &:hover {
         background-color: #fff;
         transform: translateY(2px);
