@@ -12,32 +12,36 @@
         <h1 class="titre">Fuel</h1>
     </header>
     <section id="section1">
-    <div id="divimage" class="flex1">
-        <img id="img" src="./istockphoto-499688604-612x612.jpg" alt="image" height="505px" width="300px">
-    </div>
-    <section>
-    <div id="diving" class="flex1">
-        <h1 id="titredes">Ingrédients</h1>
-        <ul>
-            <li>Citron vert</li>
-            <li>Menthe</li>
-            <li>Eau pétillante</li>
-            <li>(Whisky)</li>
-        </ul>
-    </div>
-    <div id="divasso" class="flex1">
-        <h1 id="titredes">Associations</h1>
-        <p>Ce cocktail est fait pour l'apéritif et peut également accompagner un plat frais.</p>
-    </div>
+        <div id="divimage" class="flex1">
+            <img id="img" src="./Imageaprendre.jpg" alt="image" height="505px" width="300px">
+        </div>
+        <section>
+            <div id="diving" class="flex1">
+                <h1 id="titredes">Ingrédients</h1>
+                <ul>
+                    <li>Citron vert</li>
+                    <li>Menthe</li>
+                    <li>Eau pétillante</li>
+                    <li>(Whisky)</li>
+                </ul>
+            </div>
+            <div id="divasso" class="flex1">
+                <h1 id="titredes">Associations</h1>
+                <p>Ce cocktail est fait pour l'apéritif et peut également accompagner un plat frais.</p>
+            </div>
+        </section>
     </section>
-    </section>
+
     <footer>
         <input id="prenom" placeholder="Prénom" type="text">
+        <input id="commentaire" placeholder="spécificité" type="text">
         <button class="commander" id="commander">Commander</button>
     </footer>
-     <script>
+
+    <script>
     document.getElementById('commander').addEventListener('click', async () => {
         const prenom = document.getElementById('prenom').value.trim();
+        const commentaire = document.getElementById('commentaire').value.trim();
 
         if (!prenom) {
             alert("Veuillez entrer un prénom !");
@@ -48,7 +52,7 @@
         const response = await fetch('commande.php', {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: new URLSearchParams({ prenom })
+            body: new URLSearchParams({ prenom, commentaire })
         });
 
         const result = await response.json();

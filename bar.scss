@@ -17,7 +17,7 @@ body {
 }
 .imagenav {
     height: 80px;
-    width:80px;
+    max-width:80px;
     transition: 1s;
     cursor: url('./BlueToGreenLinkSelect.cur'),auto;
 }
@@ -118,7 +118,7 @@ body {
     background-color: rgb(233, 255, 236);
 }
 #unforgiveniii:hover {
-    background-color: rgb(233, 255, 236);
+    background-color: rgb(233, 255, 254);
 }
 #Guinness2 {
     color: black;
@@ -132,47 +132,47 @@ body {
 }
 #Fuel:hover #a {
     height: 150px;
-    width: 150px;
+    max-width: 150px;
 }
 #VO:hover #b {
     height: 150px;
-    width: 150px;
+    max-width: 150px;
 }
 #Guinness:hover #c {
     height: 150px;
-    width: 150px;
+    max-width: 150px;
 }
 #Bambou:hover #d {
     height: 150px;
-    width: 150px;
+    max-width: 150px;
 }
 #Whiskas:hover #e {
     height: 150px;
-    width: 150px;
+    max-width: 150px;
 }
 #Mojito:hover #f {
     height: 150px;
-    width: 150px;
+    max-width: 150px;
 }
 #Monaco:hover #g {
     height: 150px;
-    width: 150px;
+    max-width: 150px;
 }
 #Enter_Sandman:hover #h {
     height: 150px;
-    width: 150px;
+    max-width: 150px;
 }
 #Reload:hover #i {
     height: 150px;
-    width: 150px;
+    max-width: 150px;
 }
 #nothing_else_matters:hover #j {
     height: 150px;
-    width: 150px;
+    max-width: 150px;
 }
 #diabolo:hover #k {
     height: 150px;
-    width: 150px;  
+    max-width: 150px;
 }
 #cafes {
     background-color: rgb(255, 255, 255);
@@ -194,7 +194,7 @@ body {
 }
 #cafes:hover #l {
     height: 150px;
-    width: 150px;
+    max-width: 150px;
 }
 #cafes:hover #txtcaf {
     opacity: 1;
@@ -282,13 +282,21 @@ box-shadow: inset 2px 4px 9px 0px rgba(64, 64, 64, 1);
 }
 #lifeblood:hover #m {
     height: 150px;
-    width: 150px;
+    max-width: 150px;
 }
 #sadbuttrue:hover #n {
     height: 150px;
-    width: 150px;
+    max-width: 150px;
 }
 #unforgiven:hover #o {
     height: 150px;
-    width: 150px;
+    max-width: 150px;
+}
+#unforgivenii:hover #p {
+    height: 150px;
+    max-width: 150px;
+}
+#unforgiveniii:hover #q {
+    height: 150px;
+    max-width: 150px;
 }

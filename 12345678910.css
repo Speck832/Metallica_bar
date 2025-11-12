@@ -287,6 +287,44 @@ body {
   background-color: rgb(255, 17, 0);
   color: #000000;
 }
+.header16 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: none;
+  background-image: url("./fond-texture-planche-bois-noir_53876-138962.jpg");
+  background-attachment: fixed;
+  color: #fff;
+  border-radius: 20px;
+  bottom: 20px;
+  align-self: center;
+  margin-bottom: 20px;
+  transition: 1s;
+}
+.header16:hover {
+  transition: 1s;
+  background-image: none;
+  background-color: #edfeec;
+  color: #000000;
+}
+.header17 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: none;
+  background-image: url("./fond-texture-planche-bois-noir_53876-138962.jpg");
+  background-attachment: fixed;
+  color: #fff;
+  border-radius: 20px;
+  bottom: 20px;
+  align-self: center;
+  margin-bottom: 20px;
+  transition: 1s;
+}
+.header17:hover {
+  transition: 1s;
+  background-image: none;
+  background-color: #edfefc;
+  color: #000000;
+}
 
 .flex1 {
   background-color: yellowgreen;
@@ -511,6 +549,36 @@ body {
 .flex15:hover {
   transform: scale(1.1);
 }
+.flex16 {
+  background-color: #edfeec;
+  color: #000000;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  border-radius: 10px;
+  transition: all ease-in-out 0.3s;
+}
+.flex16:hover {
+  transform: scale(1.1);
+}
+.flex17 {
+  background-color: #edfefc;
+  color: #000000;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  border-radius: 10px;
+  transition: all ease-in-out 0.3s;
+}
+.flex17:hover {
+  transform: scale(1.1);
+}
 
 #img {
   border-radius: 7px;
@@ -647,6 +715,20 @@ body {
   justify-content: center;
   align-content: center;
 }
+#section16 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+#section17 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
 
 .titre {
   align-self: center;
@@ -692,4 +774,16 @@ body {
 .commander:hover {
   background-color: #fff;
   transform: translateY(2px);
+}
+
+#commentaire {
+  padding: 8px;
+  background-color: #23292b;
+  border-style: solid;
+  border-radius: 7px;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=12345678910.css.map */

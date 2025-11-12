@@ -39,12 +39,15 @@
     </section>
    <footer>
         <input id="prenom" placeholder="Prénom" type="text">
+        <input id="commentaire" placeholder="spécificité" type="text">
         <button class="commander" id="commander">Commander un Creamy Coffee</button>
         <button class="commander" id="commander2">Commander un Irish Coffee</button>
     </footer>
-     <script>
+
+    <script>
     document.getElementById('commander').addEventListener('click', async () => {
         const prenom = document.getElementById('prenom').value.trim();
+        const commentaire = document.getElementById('commentaire').value.trim();
 
         if (!prenom) {
             alert("Veuillez entrer un prénom !");
@@ -55,14 +58,17 @@
         const response = await fetch('commande12.php', {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: new URLSearchParams({ prenom })
+            body: new URLSearchParams({ prenom, commentaire })
         });
 
         const result = await response.json();
         alert(result.message);
     });
+
+    
     document.getElementById('commander2').addEventListener('click', async () => {
         const prenom = document.getElementById('prenom').value.trim();
+        const commentaire = document.getElementById('commentaire').value.trim();
 
         if (!prenom) {
             alert("Veuillez entrer un prénom !");
@@ -73,12 +79,13 @@
         const response = await fetch('commande122.php', {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: new URLSearchParams({ prenom })
+            body: new URLSearchParams({ prenom, commentaire })
         });
 
         const result = await response.json();
         alert(result.message);
     });
+    </script>
     </script>
 </body>
 </html>

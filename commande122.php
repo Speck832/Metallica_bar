@@ -1,8 +1,9 @@
 <?php
 header('Content-Type: application/json');
 
-// Récupère le prénom envoyé en POST
+// Récupère les valeurs envoyées en POST
 $prenom = isset($_POST['prenom']) ? trim($_POST['prenom']) : '';
+$commentaire = isset($_POST['commentaire']) ? trim($_POST['commentaire']) : '';
 
 if ($prenom === '') {
     echo json_encode(['message' => 'Prénom manquant.']);
@@ -23,11 +24,17 @@ if (!is_array($data)) {
     $data = [];
 }
 
+// Construit la valeur Fuel-<commentaire>
+$valeur = 'Irish Coffee';
+if ($commentaire !== '') {
+    $valeur .= '-' . $commentaire;
+}
+
 // Met à jour ou crée la variable
-$data[$prenom] = "Irish Coffee";
+$data[$prenom] = $valeur;
 
 // Sauvegarde le fichier
 file_put_contents($file, json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
 
-echo json_encode(['message' => "Commande enregistrée pour $prenom."]);
+echo json_encode(['message' => "Commande enregistrée pour $prenom : $valeur"]);
 ?>

@@ -287,6 +287,44 @@ body {
         color: #000000;
     }
     }
+    &16 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: none;
+    background-image: url("./fond-texture-planche-bois-noir_53876-138962.jpg");
+    background-attachment: fixed;
+    color: #fff;
+    border-radius: 20px;
+    bottom: 20px;
+    align-self: center;
+    margin-bottom: 20px;
+    transition: 1s;
+    &:hover {
+        transition: 1s;
+        background-image: none;
+        background-color: #edfeec;
+        color: #000000;
+    }
+    }
+    &17 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: none;
+    background-image: url("./fond-texture-planche-bois-noir_53876-138962.jpg");
+    background-attachment: fixed;
+    color: #fff;
+    border-radius: 20px;
+    bottom: 20px;
+    align-self: center;
+    margin-bottom: 20px;
+    transition: 1s;
+    &:hover {
+        transition: 1s;
+        background-image: none;
+        background-color: #edfefc;
+        color: #000000;
+    }
+    }
 }
 .flex {
     &1 {
@@ -512,6 +550,36 @@ body {
             transform: scale(1.1);
         }
     }
+    &16 {
+    background-color: #edfeec;
+    color: #000000;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    border-radius: 10px;
+    transition: all ease-in-out 0.3s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    &17 {
+    background-color: #edfefc;
+    color: #000000;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    border-radius: 10px;
+    transition: all ease-in-out 0.3s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
 }
 #img {
     border-radius: 7px;
@@ -645,6 +713,20 @@ body {
     justify-content: center;
     align-content: center;
     }
+    &16 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    }
+    &17 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    }
     }
 .titre {
     align-self: center;
@@ -664,7 +746,7 @@ body {
     background-color: #23292b;
     border-style: solid;
     border-radius: 7px;
-        display: flex;
+    display: flex;
     align-self: center;
     justify-self: center;
     margin-top: 10px;
@@ -686,4 +768,15 @@ body {
         background-color: #fff;
         transform: translateY(2px);
     }
+}
+#commentaire {
+    padding: 8px;
+    background-color: #23292b;
+    border-style: solid;
+    border-radius: 7px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

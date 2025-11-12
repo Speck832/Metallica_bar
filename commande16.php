@@ -25,7 +25,7 @@ if (!is_array($data)) {
 }
 
 // Construit la valeur Fuel-<commentaire>
-$valeur = 'Monaco';
+$valeur = 'The Unforgiven II';
 if ($commentaire !== '') {
     $valeur .= '-' . $commentaire;
 }

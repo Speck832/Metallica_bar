@@ -13,7 +13,7 @@
     </header>
     <section id="section3">
     <div id="divimage" class="flex3">
-        <img id="img" src="./istockphoto-499688604-612x612.jpg" alt="image" height="505px" width="300px">
+        <img id="img" src="./ChatGPT Image 11 nov. 2025, 20_48_04.png" alt="image" height="505px" width="300px">
     </div>
     <section>
     <div id="diving" class="flex3">
@@ -31,11 +31,14 @@
     </section>
     <footer>
         <input id="prenom" placeholder="Prénom" type="text">
+        <input id="commentaire" placeholder="spécificité" type="text">
         <button class="commander" id="commander">Commander</button>
     </footer>
-     <script>
+
+    <script>
     document.getElementById('commander').addEventListener('click', async () => {
         const prenom = document.getElementById('prenom').value.trim();
+        const commentaire = document.getElementById('commentaire').value.trim();
 
         if (!prenom) {
             alert("Veuillez entrer un prénom !");
@@ -46,12 +49,11 @@
         const response = await fetch('commande3.php', {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: new URLSearchParams({ prenom })
+            body: new URLSearchParams({ prenom, commentaire })
         });
 
         const result = await response.json();
         alert(result.message);
     });
     </script>
-</body>
 </html>

@@ -7,33 +7,45 @@
 </head>
 <body>
 <header>
-    <h1 id="titre">Liste des Commandes</h1>
+    <h1>Liste des Commandes</h1>
 </header>
-<?php
-$file = 'commande.json';
 
-// Vérifie si le fichier existe
-if (!file_exists($file)) {
-    echo "<p>Aucune commande trouvée.</p>";
-    exit;
+<div id="contenu">
+    <p id="message">Chargement des commandes...</p>
+</div>
+
+<script>
+// Fonction pour charger les commandes depuis le serveur
+async function chargerCommandes() {
+    try {
+        const reponse = await fetch('get_commandes.php'); // On appelle le fichier PHP
+        const data = await reponse.json();
+
+        const zone = document.getElementById('contenu');
+
+        if (!data || Object.keys(data).length === 0) {
+            zone.innerHTML = '<p id="message">Aucune commande trouvée.</p>';
+            return;
+        }
+
+        let html = '';
+        for (const [nom, valeur] of Object.entries(data)) {
+            html += `<div><strong>${nom}</strong> → ${valeur}</div>`;
+        }
+
+        zone.innerHTML = html;
+    } catch (erreur) {
+        console.error('Erreur de chargement des commandes :', erreur);
+        document.getElementById('contenu').innerHTML = '<p>Erreur lors du chargement.</p>';
+    }
 }
 
-// Charge le contenu du JSON
-$data = json_decode(file_get_contents($file), true);
+// Charger immédiatement les commandes
+chargerCommandes();
 
-// Vérifie si le JSON est valide
-if (!is_array($data) || empty($data)) {
-    echo "<p>Aucune commande trouvée.</p>";
-    exit;
-}
-
-// Affiche chaque entrée
-foreach ($data as $nom => $valeur) {
-    echo "<div class='commande'>
-            <strong>$nom</strong> → $valeur
-          </div>";
-}
-?>
+// Et recharger toutes les 5 secondes
+setInterval(chargerCommandes, 5000);
+</script>
 
 </body>
 </html>
